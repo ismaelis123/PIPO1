@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Deportes</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos</a></li>
+                <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="inicio">
+                <h2>Inicio</h2>
+                <p>Bienvenido a nuestra página de deportes. Aquí encontrarás información sobre nuestros productos y mucho más.</p>
+            </section>
+            <section id="productos" style="display:none;">
+                <h2>Productos</h2>
+                <div class="productos">
+                    <!-- Aquí irán los productos -->
+                </div>
+                <div class="carrito">
+                    <h3>Carrito de Compras</h3>
+                    <ul id="carrito"></ul>
+                    <p>Total: $<span id="total">0</span></p>
+                    <button onclick="descargarFactura()">Descargar Factura</button>
+                </div>
+            </section>
+            <section id="contacto" style="display:none;">
+                <h2>Contacto</h2>
+                <p>Contáctanos a través de:</p>
+                <ul>
+                    <li><a href="https://wa.me/tu-numero" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/tu-pagina" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/tu-pagina" target="_blank">Instagram</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Deportes. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/scritps.js"></script>
+</body>
+</html>
+
